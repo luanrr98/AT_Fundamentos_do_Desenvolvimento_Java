@@ -1,0 +1,10 @@
+Biblioteca Pessoal;Pública;Luan Ribeiro;luanrr@luanrr;23;
+Manga;414;Naruto;Ação/Aventura;false;8.9;Mensal;72;448
+Anime;66;FLCL;Aventura;false;9.6;3D;1;6
+Jogo;13;Bloodstained: Ritual Of The Night;MetroidVania;false;9;PC;Unreal Engine 4;false
+Manga;87;Uzumaki;Horror;false;9.3;Quinzenal;3;20
+Jogo;45;Stardew Valley;Fazenda;false;8.2;SWITCH;Propietária;true
+Anime;139;Berserk;Ação/Medieval;true;8.2;3D;2;24
+Manga;899;Resident Evil: The Marhawa Desire;Horror/Ação;true;7.4;Quinzenal;5;39
+Jogo;65;Spider-Man;Ação;true;9;PS5;Insomniac Engine;false
+Anime;233;Fullmetal Alchemist Brotherhood;Ação/Aventura;true;9.5;2D;3;64
