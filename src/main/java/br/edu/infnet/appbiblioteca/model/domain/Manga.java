@@ -28,9 +28,9 @@ public class Manga extends Midia {
 	public void setQuantidadeCapitulos(int quantidadeCapitulos) throws QuantidadeInvalidaException {
 		if(quantidadeCapitulos <= 0) {
 			throw new QuantidadeInvalidaException(getNome() + ": A quantidade de capítulos é inválida!");
-		}else {
-			this.quantidadeCapitulos = quantidadeCapitulos;
 		}
+		
+		this.quantidadeCapitulos = quantidadeCapitulos;
 	}
 
 	public int getQuantidadeVolumes() {
@@ -40,10 +40,9 @@ public class Manga extends Midia {
 	public void setQuantidadeVolumes(int quantidadeVolumes) throws QuantidadeInvalidaException {
 		if(quantidadeVolumes <= 0) {
 			throw new QuantidadeInvalidaException(getNome() +": A quantidade de volumes é inválida!");
-		}else {
-			this.quantidadeVolumes = quantidadeVolumes;
 		}
 		
+		this.quantidadeVolumes = quantidadeVolumes;
 	}
 
 
@@ -53,11 +52,11 @@ public class Manga extends Midia {
 	}
 
 	public void setFrequenciaEstimadaLancamento(String frequenciaEstimadaLancamento) throws FrequenciaInvalidaException {
-		if("Mensal".equals(frequenciaEstimadaLancamento) || "Quinzenal".equals(frequenciaEstimadaLancamento)) {
-			this.frequenciaEstimadaLancamento = frequenciaEstimadaLancamento;
-		}else {
+		if(!"Mensal".equals(frequenciaEstimadaLancamento) && !"Quinzenal".equals(frequenciaEstimadaLancamento)) {
 			throw new FrequenciaInvalidaException(getNome() + ": A frequência de lançamento deve ser Mensal ou Quinzenal");
+
 		}
+		this.frequenciaEstimadaLancamento = frequenciaEstimadaLancamento;
 	}
 
 	@Override

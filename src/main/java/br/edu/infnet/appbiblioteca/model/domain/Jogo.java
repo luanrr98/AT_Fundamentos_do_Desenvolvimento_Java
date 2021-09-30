@@ -22,12 +22,11 @@ public class Jogo extends Midia {
 	}
 
 	public void setPlataforma(String plataforma) throws PlataformaInvalidaException {
-		if("PC".contentEquals(plataforma) || "PS5".equals(plataforma) || "XBOX".equals(plataforma) || "SWITCH".equals(plataforma)) {
-			
-			this.plataforma = plataforma;
-		}else {
+		if(!"PC".equals(plataforma) && !"PS5".equals(plataforma) && !"XBOX".equals(plataforma) && !"SWITCH".equals(plataforma)) {
 			throw new PlataformaInvalidaException(getNome() + ": A plataforma deve ser PC, SWITCH, XBOX ou PS5!");
 		}
+			
+		this.plataforma = plataforma;
 	}
 
 	public String getEngine() {

@@ -29,9 +29,9 @@ public class Anime extends Midia {
 	public void setNumeroEpisodios(int numeroEpisodios) throws QuantidadeInvalidaException {
 		if(numeroEpisodios <= 0) {
 			throw  new QuantidadeInvalidaException(getNome() + ": A quantidade de Episodios é inválida");
-		}else {
-			this.numeroEpisodios = numeroEpisodios;
 		}
+		
+		this.numeroEpisodios = numeroEpisodios;
 	}
 
 
@@ -43,9 +43,9 @@ public class Anime extends Midia {
 	public void setNumeroTemporadas(int numeroTemporadas) throws QuantidadeInvalidaException {
 		if(numeroTemporadas <= 0) {
 			throw  new QuantidadeInvalidaException(getNome() + ": A quantidade de Temporadas é inválida");
-		}else {
-			this.numeroTemporadas = numeroTemporadas;
 		}
+		
+		this.numeroTemporadas = numeroTemporadas;
 	}
 
 
@@ -55,11 +55,11 @@ public class Anime extends Midia {
 
 
 	public void setTipoAnimacao(String tipoAnimacao) throws TipoAnimacaoInvalidaException {
-		if("2D".equals(tipoAnimacao) || "3D".equals(tipoAnimacao)) {
-			this.tipoAnimacao = tipoAnimacao;
-		}else {
+		if(!"2D".equals(tipoAnimacao) && !"3D".equals(tipoAnimacao)) {
 			throw new TipoAnimacaoInvalidaException(getNome() + ": O tipo de animação deve ser 2D ou 3D");
 		}
+		
+		this.tipoAnimacao = tipoAnimacao;
 	}
 
 
